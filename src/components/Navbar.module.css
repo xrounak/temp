@@ -127,6 +127,7 @@
   right: 1rem;
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   overflow: hidden;
+  background-color: #00000000;
 }
 
 .hamburger::before {
