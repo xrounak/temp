@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- System Fonts Fallback -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Loading Optimization -->
+    <script>
+      // Font loading optimization
+      if ('fonts' in document) {
+        Promise.all([
+          document.fonts.load('300 1em Inter'),
+          document.fonts.load('400 1em Inter'),
+          document.fonts.load('500 1em Inter'),
+          document.fonts.load('600 1em Inter'),
+          document.fonts.load('700 1em Inter'),
+          document.fonts.load('800 1em Inter'),
+          document.fonts.load('900 1em Inter')
+        ]).then(() => {
+          document.documentElement.classList.add('fonts-loaded');
+        });
+      }
+    </script>
+    
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
